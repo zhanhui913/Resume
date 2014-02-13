@@ -1,0 +1,21 @@
+# All .pdf files -- these are submissions for project checkpoints.
+*.pdf
+
+# Ignore all vim backup files.
+*.swp
+
+# Ignore all gedit backup files.
+*~
+
+# Ignore hidden files.
+.*
+!/.gitignore
+
+# Ignore photos uploaded to server file system.
+public/api/user_pictures/*
+
+# Ignore db credentials.
+sys/controller/PDO_Config.php
+
+# Ignore mac store files
+.DS_Store
