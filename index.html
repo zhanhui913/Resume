@@ -57,13 +57,30 @@
                     </li>
                     <li><a href="contact.html">Contact</a>
                     </li>
-                    <li>
-        <form class="navbar-search pull-right">
-            <input type="text" class="span2" placeholder="Login">
-            <input type="text" class="span2" placeholder="Password">
-            <input type="submit" value="Login" class="btn"/>
-        </form>
-</li>
+                    <li><a class="navbar-search pull-right"  data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+
+
+                   <!-- Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Hello, this is an example
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -152,26 +169,25 @@
 
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                      </div>
-                      <div class="modal-body">
-                        Hello, this is an example
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                    </div>
-                    </div>
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Hello, this is an example
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- /.container -->
 
