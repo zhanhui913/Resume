@@ -100,7 +100,7 @@ $zhan = $facebook->api('/zhanny913');
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
 
-    <h3>Public profile of Naitik</h3>
+    <h3>Public profile of Zhan</h3>
     <img src="https://graph.facebook.com/zhanny913/picture">
     <?php echo $zhan['name']; ?>
   </body>
