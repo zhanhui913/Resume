@@ -51,11 +51,11 @@ if ($user) {
 }
 
 // This call will always work since we are fetching public data.
-$naitik = $facebook->api('/zhanny913');
+$zhan = $facebook->api('/zhanny913');
 
 ?>
 <!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<html xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
     <title>php-sdk</title>
     <style>
@@ -102,6 +102,6 @@ $naitik = $facebook->api('/zhanny913');
 
     <h3>Public profile of Naitik</h3>
     <img src="https://graph.facebook.com/zhanny913/picture">
-    <?php echo $naitik['name']; ?>
+    <?php echo $zhan['name']; ?>
   </body>
 </html>
