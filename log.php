@@ -1,11 +1,11 @@
 <?php
   // Remember to copy files from the SDK's src/ directory to a
   // directory in your application on the server, such as php-sdk/
-  require_once('php-sdk/facebook.php');
+  require_once('src/facebook.php');
 
   $config = array(
-    'appId' => 'YOUR_APP_ID',
-    'secret' => 'YOUR_APP_SECRET',
+  'appId'  => '605720179505205',
+  'secret' => '16c941efa03366774fa4afbd570afa9b',
     'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
   );
 
