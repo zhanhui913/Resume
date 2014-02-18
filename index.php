@@ -102,7 +102,11 @@ if ($user) {
                     </li>
                     <?php
                         if($user){ ?>
-                            <li><a   data-toggle="modal" href="<?php $logoutUrl; $facebook->destroySession();?>"><?php echo $user_profile['name'];?> </a>
+                            <li>
+                                <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+                            </li>
+                            
+                            <li><a   href="<?php $logoutUrl; $facebook->destroySession();?>"><?php echo $user_profile['name'];?> </a>
                             </li>                                
                         <?php }else { ?>
                             <li><a   data-toggle="modal" href="#loginModal">Login</a>
