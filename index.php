@@ -256,7 +256,7 @@ if ($user) {
                                         <h4>OR</h4>
 
 
-                                        <form action="<?php echo $loginUrl?>" method="get">
+                                        <form action="<?php echo $loginUrl; ?>" method="get">
                                             <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via Facebook" />
                                         </form>
                                     </center>
