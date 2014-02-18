@@ -51,7 +51,7 @@ if ($user) {
 }
 
 // This call will always work since we are fetching public data.
-$zhan = $facebook->api('/zhanny913');
+//$zhan = $facebook->api('/zhanny913');
 
 ?>
 <!doctype html>
@@ -102,6 +102,7 @@ $zhan = $facebook->api('/zhanny913');
 
     <h3>Public profile of Zhan</h3>
     <img src="https://graph.facebook.com/zhanny913/picture">
-    <?php echo $zhan['name']; ?>
+    //<?php echo $zhan['name']; ?>
+    <?php echo $user_profile['name']?>
   </body>
 </html>
