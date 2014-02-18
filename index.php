@@ -9,7 +9,7 @@ $facebook = new Facebook(array(
 
 // Get User ID
 $user = $facebook->getUser();
-echo "result".$user;
+
 // We may or may not have this data based on whether the user is logged in.
 //
 // If we have a $user id here, it means we know the user is logged into
@@ -20,7 +20,6 @@ if ($user) {
     try {
         // Proceed knowing you have a logged in user who's authenticated.
         $user_profile = $facebook->api('/me');
-        echo "user is ".$user_profile['name'];
     } catch (FacebookApiException $e) {
         error_log($e);
         $user = null;
