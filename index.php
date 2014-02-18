@@ -102,7 +102,7 @@ if ($user) {
                     </li>
                     <?php
                         if($user){ ?>
-                            <li><a   data-toggle="modal" href="<?php $logoutUrl; $facebook->destroySession();?>"><?php $user_profile['name'];?> </a>
+                            <li><a   data-toggle="modal" href="<?php $logoutUrl; $facebook->destroySession();?>"><?php echo $user_profile['name'];?> </a>
                             </li>                                
                         <?php }else { ?>
                             <li><a   data-toggle="modal" href="#loginModal">Login</a>
@@ -212,7 +212,7 @@ if ($user) {
                                     <hr/>
                                     <center>
                                         <h4>OR</h4>
-      <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+                                        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
                                     </center>
                                 </div>
                             </div>
