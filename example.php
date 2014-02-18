@@ -51,7 +51,7 @@ if ($user) {
 }
 
 // This call will always work since we are fetching public data.
-$zhan = $facebook->api('/shenyapp');
+//$zhan = $facebook->api('/zhanny913');
 
 ?>
 <!doctype html>
@@ -75,7 +75,7 @@ $zhan = $facebook->api('/shenyapp');
     <h1>php-sdk</h1>
 
     <?php if ($user): ?>
-      <a href="<?php echo $logoutUrl; ?>">Logout</a>
+      <a href="<?php echo $logoutUrl; $facebook->destroySession(); ?>">Logout</a>
     <?php else: ?>
       <div>
         Check the login status using OAuth 2.0 handled by the PHP SDK:
