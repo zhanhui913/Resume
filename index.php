@@ -212,9 +212,7 @@ if ($user) {
                                     <hr/>
                                     <center>
                                         <h4>OR</h4>
-                                        <form action ="<?php $loginUrl; ?>">
-                                            <button type="submit" style="width: 100%" class="btn btn-primary btn-facebook">Login via Facebook</button>
-                                        </form>
+      <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
                                     </center>
                                 </div>
                             </div>
