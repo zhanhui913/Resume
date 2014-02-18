@@ -51,7 +51,7 @@ if ($user) {
 }
 
 // This call will always work since we are fetching public data.
-//$zhan = $facebook->api('/zhanny913');
+$zhan = $facebook->api('/shenyapp');
 
 ?>
 <!doctype html>
