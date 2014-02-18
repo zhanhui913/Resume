@@ -103,7 +103,7 @@ if ($user) {
                     <?php
                         if($user){ ?>
                             <li>
-                                <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+                                <img src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=30&height=30">
                             </li>
                             
                             <li><a   href="<?php $logoutUrl; $facebook->destroySession();?>"><?php echo $user_profile['name'];?> </a>
