@@ -133,7 +133,7 @@ if ($user) {
                                                     <div class="navbar-footer-content">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
+                                                                <a href="#" class="btn btn-default btn-sm">Change Password</a>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <a href="<?php $logoutUrl; $facebook->destroySession(); ?>" class="btn btn-default btn-sm pull-right">Sign Out</a>
