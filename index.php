@@ -114,15 +114,15 @@ if ($user) {
                                                 <div class="navbar-content">
                                                     <div class="row">
                                                         <div class="col-md-5">
-                                                            <img src="http://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/twDq00QDud4/s120-c/photo.jpg"
+                                                            <img src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=100&height=100"
                                                                 alt="Alternate Text" class="img-responsive" />
                                                             <p class="text-center small">
                                                                 <a href="#">Change Photo</a></p>
                                                         </div>
                                                         <div class="col-md-7">
-                                                            <span>Bhaumik Patel</span>
+                                                            <span><?php echo $user_profile['name'];?></span>
                                                             <p class="text-muted small">
-                                                                mail@gmail.com</p>
+                                                                <?php echo $user_profile['username']?></p>
                                                             <div class="divider">
                                                             </div>
                                                             <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
@@ -132,10 +132,7 @@ if ($user) {
                                                 <div class="navbar-footer">
                                                     <div class="navbar-footer-content">
                                                         <div class="row">
-                                                            <div class="col-md-6">
-                                                                <a href="#" class="btn btn-default btn-sm">Change Password</a>
-                                                            </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-12">
                                                                 <a href="<?php $logoutUrl; $facebook->destroySession(); ?>" class="btn btn-default btn-sm pull-right">Sign Out</a>
                                                             </div>
                                                         </div>
