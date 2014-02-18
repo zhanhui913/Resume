@@ -102,7 +102,7 @@ if ($user) {
 
     <h3>Public profile of Zhan</h3>
     <img src="https://graph.facebook.com/zhanny913/picture">
-    //<?php echo $zhan['name']; ?>
+    <?php //echo $zhan['name']; ?>
     <?php echo $user_profile['name']?>
   </body>
 </html>

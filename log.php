@@ -11,6 +11,7 @@
 
   $facebook = new Facebook($config);
   $user_id = $facebook->getUser();
+  echo "user is ".$user_id;
 ?>
 <html>
   <head></head>
