@@ -254,8 +254,10 @@ if ($user) {
                                     <hr/>
                                     <center>
                                         <h4>OR</h4>
-                                        <?php echo "this is the link".$loginUrl?>
-                                        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+                                        <form method="link" action="<?php echo $loginUrl; ?>">
+                                            <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
+                                        </form>
+                                        
                                     </center>
                                 </div>
                             </div>
