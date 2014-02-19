@@ -254,6 +254,7 @@ if ($user) {
                                     <hr/>
                                     <center>
                                         <h4>OR</h4>
+                                        <?php echo "this is the link".$loginUrl?>
                                         <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
                                     </center>
                                 </div>
@@ -287,6 +288,8 @@ if ($user) {
         interval: 5000
     })
     </script>
+
+
 
 </body>
 
