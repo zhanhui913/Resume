@@ -255,8 +255,8 @@ if ($user) {
                                     <center>
                                         <h4>OR</h4>
 
-                                        <input type="btn btn-lg btn-facebook btn-block" onclick="location.href('<?php echo $loginUrl; ?>');" value="Facebook">
-                                        
+                                        <input class="btn btn-lg btn-facebook btn-block" type="button" onclick="location.href('<?php echo $loginUrl; ?>');" value="Facebook">
+                                       
                                     </center>
                                 </div>
                             </div>
