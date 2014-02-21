@@ -6,8 +6,8 @@
 
 <?php 
 $root = $_SERVER['DOCUMENT_ROOT'];
-echo "root is ".$root;
-require 'sys/ModelController.php';
+
+require_once $root . '/sys/ModelController.php';
 
 $model = new ModelController();
 

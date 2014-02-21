@@ -1,5 +1,6 @@
 <?php 
-    require 'PDO_Config.php';
+$root = $_SERVER['DOCUMENT_ROOT'];
+require_once $root . '/sys/PDO_Config.php';
 
     class PDOAdapter {
         public $conn = null;

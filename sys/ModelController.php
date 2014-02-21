@@ -1,6 +1,7 @@
 <?php
 
-require 'PDO_Adapter.php';
+$root = $_SERVER['DOCUMENT_ROOT'];
+require_once $root . '/sys/PDO_Adapter.php';
 
 class ModelController {	
 
