@@ -5,7 +5,7 @@ require_once $root . '/sys/PDO_Adapter.php';
 
 class ModelController {	
 
-	private $adapter;
+	private $adapter=null;
 
 
 	public function __construct() {
