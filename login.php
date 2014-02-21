@@ -8,9 +8,9 @@
 $root = $_SERVER['DOCUMENT_ROOT'];
 require_once $root . '/sys/ModelController.php';
 
-$model = new ModelController();
+//$model = new ModelController();
 
-//if (isset($_POST['loginSubmit'])) {
+if (isset($_POST['loginSubmit'])) {
    $user = $_POST["user"];
    $pass = $_POST["pass"];
 }
