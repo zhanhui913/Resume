@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-<head>Login</head>
+<head></head>
 <body>
 
 <?php 
 $root = $_SERVER['DOCUMENT_ROOT'];
 require_once $root . '/sys/ModelController.php';
-echo "root is ".$root. '/sys/ModelController.php';
 
 $model = new ModelController();
-echo "model ".$model;
+
 if (isset($_POST['loginSubmit'])) {
    $user = $_POST["user"];
    $pass = $_POST["pass"];
