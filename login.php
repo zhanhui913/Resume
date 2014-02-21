@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html>
+
+<head>Login</head>
+<body>
+
+<?php 
+
 require 'sys/ModelController.php';
 
 $model = new ModelController();
@@ -9,18 +16,6 @@ if (isset($_POST['loginSubmit'])) {
 }
 $result = $this->model->checkLogin($user,$pass);
 
-
-
-
-?>
-
-<!DOCTYPE html>
-<html>
-
-<head>Login</head>
-<body>
-
-<?php 
 
 echo "Username = ".$user;
 echo "Password=".$pass;
