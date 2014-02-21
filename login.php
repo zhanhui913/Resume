@@ -1,5 +1,5 @@
 <?php
-include 'sys/ModelController.php';
+require 'sys/ModelController.php';
 
 $model = new ModelController();
 
