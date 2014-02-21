@@ -132,6 +132,7 @@ if ($user) {
                                                     <div class="navbar-footer-content">
                                                         <div class="row">
                                                             <div class="col-md-12">
+                                                                <a type="button" onclick="FbSignout()" class="btn btn-default btn-sm pull-right">Sign Out</a>
                                                                 <a href="<?php $logoutUrl; $facebook->destroySession(); ?>" class="btn btn-default btn-sm pull-right">Sign Out</a>
                                                             </div>
                                                         </div>
@@ -244,19 +245,17 @@ if ($user) {
                                     <center><h4 class="modal-title" id="myModalLabel">Login</h4></center>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="post" action='' name="login_form">
+                                    <form method="post" action='login.php' name="login_form">
                                         <center>
-                                            <p><input type="text" style="width: 100%" class="span3" name="eid" id="email" placeholder="Username"></p>
-                                            <p><input type="password" style="width: 100%" class="span3" name="passwd" placeholder="Password"></p>
-                                            <button type="submit" style="width: 100%" class="btn btn-primary">Sign in</button>
+                                            <p><input type="text" style="width: 100%" class="span3" name="user" placeholder="Username"></p>
+                                            <p><input type="password" style="width: 100%" class="span3" name="pass" placeholder="Password"></p>
+                                            <button type="submit" name="loginSubmit" style="width: 100%" class="btn btn-primary">Sign in</button>
                                         </center>
                                     </form>
                                     <hr/>
                                     <center>
                                         <h4>OR</h4>
-
                                         <input class="btn btn-lg btn-facebook btn-block" type="button" onclick="window.location='<?php echo $loginUrl; ?>'" value="Facebook">
-                                        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
                                     </center>
                                 </div>
                             </div>
@@ -290,7 +289,24 @@ if ($user) {
     })
     </script>
 
-
+    <script>
+        function FbSignout(){
+            var xmlhttp;
+            if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            }
+            else{// code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","ajax_info.txt",true);
+            xmlhttp.send();
+        }
+    </script>
 
 </body>
 
