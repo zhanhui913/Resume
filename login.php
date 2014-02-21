@@ -4,8 +4,8 @@ require_once $root . '/../sys/PDO_Adapter.php';
 
 
 if (isset($_POST['loginSubmit'])) {
-   $user = test_input($_POST["user"]);
-   $pass = test_input($_POST["pass"]);
+   $user = $_POST["user"];
+   $pass = $_POST["pass"];
 }
 
 
