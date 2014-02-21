@@ -14,13 +14,13 @@ if (isset($_POST['loginSubmit'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
+<head>Login</head>
 <body>
 
 <?php 
 
 echo "Username = ".$user;
-echo "Password".$pass;
+echo "Password=".$pass;
 ?>
 </body>
 </html>
