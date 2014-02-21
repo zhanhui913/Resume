@@ -6,9 +6,8 @@
 
 <?php 
 $root = $_SERVER['DOCUMENT_ROOT'];
-
 require_once $root . '/sys/ModelController.php';
-
+echo "root is ".$root. '/sys/ModelController.php';
 $model = new ModelController();
 
 if (isset($_POST['loginSubmit'])) {
