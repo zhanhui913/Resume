@@ -1,6 +1,4 @@
 <?php
-$root = $_SERVER['DOCUMENT_ROOT'];
-require_once $root . '/../sys/PDO_Adapter.php';
 
 
 if (isset($_POST['loginSubmit'])) {
@@ -12,7 +10,7 @@ if (isset($_POST['loginSubmit'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>Login</head>
 <body>
