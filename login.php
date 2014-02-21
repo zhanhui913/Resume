@@ -1,5 +1,4 @@
 <?php
-require 'sys/PDO_Adapter.php';
 
 
 if (isset($_POST['loginSubmit'])) {
