@@ -1,6 +1,6 @@
 <?php
 
-require 'sys/PDO_Adapter.php';
+require 'PDO_Adapter.php';
 
 class ModelController {	
 
