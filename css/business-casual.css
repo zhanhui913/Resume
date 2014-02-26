@@ -277,3 +277,9 @@ margin-right: 15px !important;
 padding: 0px;
 overflow: hidden;
 }
+
+.protrait{
+max-width: auto;
+height: 150px;
+
+}
