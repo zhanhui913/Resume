@@ -79,7 +79,7 @@ if ($user) {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li><a href="resume.html">Resume</a>
                     </li>
