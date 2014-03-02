@@ -81,6 +81,8 @@ if ($user) {
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a>
                     </li>
+                    <li><a href="resume.html">Resume</a>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
                         <ul class="dropdown-menu">
