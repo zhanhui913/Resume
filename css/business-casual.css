@@ -24,6 +24,10 @@ hr {
   max-width: 400px;
 }
 
+.hr-left{
+  margin: 0 auto 0;
+}
+
 .brand,
 .address-bar {
   display: none;
