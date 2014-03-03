@@ -212,12 +212,31 @@ if ($user) {
             </div>
         </div>
 
-
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Build a website that's <strong>awesome!</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                </div>    
+                <div class="col-lg-8">
+                    <p>Checkout my resume</p>
+                    <p>Checkout my projects</p>
+                </div> 
+            </div>
+        </div>
 
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
-
+                    <hr>
+                    <h2 class="intro-text text-center">Beautiful boxes <strong>to showcase your content</strong>
+                    </h2>
+                    <hr>
 
                     <!-- Login Modal -->
                    <div  class="modal fade bs-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
