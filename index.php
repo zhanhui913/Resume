@@ -209,6 +209,7 @@ if ($user) {
                         <small>By <strong>Zhan H. Yap</strong></small>
                     </h2>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -228,6 +229,7 @@ if ($user) {
                     <p>Checkout my projects</p>
                     <p>Checkout my classes</p>
                 </div> 
+                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -268,6 +270,7 @@ if ($user) {
 
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
     <!-- /.container -->
