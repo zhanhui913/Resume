@@ -226,6 +226,7 @@ if ($user) {
                 <div class="col-lg-8">
                     <p>Checkout my resume</p>
                     <p>Checkout my projects</p>
+                    <p>Checkout my classes</p>
                 </div> 
             </div>
         </div>
