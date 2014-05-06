@@ -1,45 +1,3 @@
-<?php
-require 'src/facebook.php';
-
-// Create our Application instance (replace this with your appId and secret).
-$facebook = new Facebook(array(
-    'appId'  => '605720179505205',
-    'secret' => '16c941efa03366774fa4afbd570afa9b',
-));
-
-// Get User ID
-$user = $facebook->getUser();
-
-// We may or may not have this data based on whether the user is logged in.
-//
-// If we have a $user id here, it means we know the user is logged into
-// Facebook, but we don't know if the access token is valid. An access
-// token is invalid if the user logged out of Facebook.
-
-if ($user) {
-    try {
-        // Proceed knowing you have a logged in user who's authenticated.
-        $user_profile = $facebook->api('/me');
-    } catch (FacebookApiException $e) {
-        error_log($e);
-        $user = null;
-    }
-}
-
-// Login or logout url will be needed depending on current user state.
-if ($user) {
-    $logoutUrl = $facebook->getLogoutUrl();
-} else {
-    $statusUrl = $facebook->getLoginStatusUrl();
-    $loginUrl = $facebook->getLoginUrl();
-}
-
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,60 +59,6 @@ if ($user) {
                     </li>
                     <li><a href="contact.html">Contact</a>
                     </li>
-                    <?php
-                        if($user){ ?>
-    
-
-
-
-
-                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user_profile['name']?>
-                                        <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <div class="navbar-content">
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                            <img src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=100&height=100"
-                                                                alt="Alternate Text" class="img-responsive" />
-                                                            <p class="text-center small">
-                                                                <a href="#">Change Photo</a></p>
-                                                        </div>
-                                                        <div class="col-md-7">
-                                                            <span><?php echo $user_profile['name'];?></span>
-                                                            <p class="text-muted small">
-                                                                <?php echo $user_profile['username']?></p>
-                                                            <div class="divider">
-                                                            </div>
-                                                            <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="navbar-footer">
-                                                    <div class="navbar-footer-content">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <a type="button" onclick="FbSignout()" class="btn btn-default btn-sm pull-right">Sign Out</a>
-                                                                <a href="<?php $logoutUrl; $facebook->destroySession(); ?>" class="btn btn-default btn-sm pull-right">Sign Out</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-
-
-
-
-
-                        <?php }else { ?>
-                            <li><a   data-toggle="modal" href="#loginModal">Login</a>
-                            </li>                            
-                        <?php }
-                    ?>
-
                 </ul>
             </div>
 
@@ -292,25 +196,6 @@ if ($user) {
     $('.carousel').carousel({
         interval: 5000
     })
-    </script>
-
-    <script>
-        function FbSignout(){
-            var xmlhttp;
-            if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-                xmlhttp=new XMLHttpRequest();
-            }
-            else{// code for IE6, IE5
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange=function(){
-                if (xmlhttp.readyState==4 && xmlhttp.status==200){
-                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-                }
-            }
-            xmlhttp.open("GET","ajax_info.txt",true);
-            xmlhttp.send();
-        }
     </script>
 
 </body>
